@@ -1,0 +1,218 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif
+}
+
+.tab-cont
+{
+    height:2rem;
+    background-color: green;
+    display: flex;
+    color:white;
+    padding-left:1rem;
+    align-items: flex-end;
+    padding-top:1rem;
+    padding-right:1rem;
+}
+
+.eachtab
+{
+    height:2rem;
+    width:3.5rem;
+    text-align: center;
+}
+
+.eachtab.active
+{
+    background-color: #ecf0f1;
+    color: green;
+}
+
+.actions-cont
+{
+    height:3rem;
+    background-color: #ecf0f1;
+    display:flex;
+    align-items: center;
+    padding-left:1rem;
+    padding-right: 1rem;
+    
+}
+.eachaction
+{
+    margin:0.5rem;
+    position: relative;
+
+}
+
+.eachaction:hover
+{
+    cursor: pointer;
+}
+
+.eachaction input{
+    height:100%;
+    width:100%;
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.eachaction input:hover{
+    cursor: pointer;
+}
+
+.actions-cont .fontselect
+{
+    margin:0.25rem;
+    outline: none;
+    border: none;
+    height:1.5rem;
+    border-radius: 2px;
+    width:5rem;
+}
+.actions-cont .fontsize
+{
+    margin:0.25rem;
+    outline: none;
+    border: none;
+    height:1.5rem;
+    border-radius: 2px;
+}
+
+.formula-cont
+{
+    height:2rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;;
+}
+
+.formula-cont .rc{
+    background-color: white;
+    width:5rem;
+    height:1.5rem;
+    text-align: center;
+}
+
+.formula-cont img
+{
+    height:1.2rem;
+    width:1rem;
+    margin:0.5rem;
+}
+
+.formula-cont .formula{
+    background-color: white;
+    width:calc(100vw - 9rem);
+    height:1.5rem;
+    text-align: center;
+}
+
+.formula input
+{
+    outline: none;
+    border: none;
+    width:100%;
+    height:100%;
+}
+
+.sheet-cont
+{
+    height:3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.sheet-cont .eachsheet
+{
+    width:4rem;
+    height:1.5rem;
+    background-color: white;
+    margin:0.5rem;
+    text-align: center;
+    padding:0.25rem;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.sheet-cont .eachsheet.active{
+    background-color: darkgray;
+}
+
+
+.grid-cont
+{
+    height: calc(100vh - 2rem - 3rem - 3rem - 3rem);
+    position: relative;
+    overflow: auto;
+}
+
+.grid-dummy
+{
+    width:2rem;
+    height:2rem;
+    background-color:lightgray;
+}
+.gridcolcont
+{
+    position: sticky;
+    top:2rem;
+    left:0;
+}
+
+.gridrowcont
+{
+    position: absolute;
+    top:0;
+    left:2rem;
+   
+}
+.gridaddressrowcont
+{
+    display: flex;
+    position: sticky;
+    top:0rem;
+    left:2rem;
+}
+
+.address-row
+{
+    width:2rem;
+    height:2rem;
+    background-color: #ecf0f1;
+    border: 1px solid #dfe4ea;
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-col
+{
+    width:5rem;
+    height:2rem;
+    background-color: #ecf0f1;
+    border: 1px solid #dfe4ea;
+    border-top: none;
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.grid-cell
+{
+    width:5rem;
+    height:2rem;
+    border: 1px solid #dfe4ea;
+    box-sizing:border-box;
+    overflow: hidden;
+    outline-color: green;
+    border-radius: 0px;
+}
